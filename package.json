@@ -2,12 +2,11 @@
   "name": "@tejks/logger",
   "version": "0.1.2",
   "description": "",
-  "main": "./dist/index.js",
-  "types": "./dist/index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.js",
   "files": [
-    "dist/**/*"
+    "lib/**/*"
   ],
-  "private": "false",
   "scripts": {
     "dev": "ts-node ./src/index.ts",
     "build": "tsc",
