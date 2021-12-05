@@ -1,0 +1,31 @@
+{
+  "name": "@tejks/logger",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "build": "tsc",
+    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tejks/logger.git"
+  },
+  "author": "tejks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tejks/logger/issues"
+  },
+  "homepage": "https://github.com/tejks/logger#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "^8.4.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
