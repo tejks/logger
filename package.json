@@ -17,7 +17,7 @@
     "url": "git+https://github.com/tejks/logger.git"
   },
   "author": "tejks",
-  "license": "ISC",
+  "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/tejks/logger/issues"
   },
@@ -30,6 +30,6 @@
     "typescript": "^4.5.2"
   },
   "dependencies": {
-    "moment": "^2.29.1"
+    "moment": "^2.29.4"
   }
 }
