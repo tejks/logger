@@ -39,6 +39,17 @@ export class FileLogger implements LoggerBuilder {
   }
 
   private getStyledMessage(message: string, type: LogType) {
-    return `\n---- ${this.params.getDate()} ----\n${type}: ${message}`;
+    return `\n${this.getFormedType(type)} -- ${this.params.getDate()} -- ${message}`;
+  }
+
+  private getFormedType(type: LogType) {
+    switch (type) {
+      case "WARNING": return "WARNING"
+      case "ERROR": return "ERROR  "
+      case "INFO": return "INFO   "
+      case "NOTICE": return "NOTICE "
+      case "OK": return "OK     "
+      case "CRIT": return "CRIT   "
+    }
   }
 }
