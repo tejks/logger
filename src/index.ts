@@ -1,2 +1,2 @@
-export { ErrorType } from './data';
+export { LogType } from './data';
 export { Logger } from './logger';
