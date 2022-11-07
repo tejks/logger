@@ -1,4 +1,4 @@
-# Typescript-logger
+# ts-dev-logger
 
 [![Package Version][package-image]][package-url]
 <img src="https://img.shields.io/badge/platform-node-lightgrey.svg?style=flat" alt="platform">
@@ -9,5 +9,9 @@
 
 ## Install
 ```bash
-npm install @tejks/logger
+npm i ts-dev-logger
+```
+
+```bash
+yarn add ts-dev-logger
 ```
