@@ -20,32 +20,32 @@ export class ConsoleLogger implements LoggerBuilder {
     switch (type) {
       case "WARNING":
         return {
-          colorType: chalk.yellowBright.bold("WARNING"),
+          colorType: chalk.yellowBright.bold("WARN  "),
           color: chalk.yellowBright.bold,
         };
       case "ERROR":
         return {
-          colorType: chalk.redBright.bold(" ERROR "),
+          colorType: chalk.redBright.bold("ERROR "),
           color: chalk.redBright.bold,
         };
       case "INFO":
         return {
-          colorType: chalk.blueBright.bold(" INFO  "),
+          colorType: chalk.blueBright.bold("INFO  "),
           color: chalk.blueBright.bold,
         };
       case "NOTICE":
         return {
-          colorType: chalk.whiteBright.bold("NOTICE "),
+          colorType: chalk.whiteBright.bold("NOTICE"),
           color: chalk.whiteBright.bold,
         };
       case "OK":
         return {
-          colorType: chalk.greenBright.bold("  OK   "),
+          colorType: chalk.greenBright.bold("OK    "),
           color: chalk.greenBright.bold,
         };
       case "CRIT":
         return {
-          colorType: chalk.hex("#FF0000").bold(" CRIT  "),
+          colorType: chalk.hex("#FF0000").bold("CRIT  "),
           color: chalk.hex("#FF0000").bold,
         };
     }
