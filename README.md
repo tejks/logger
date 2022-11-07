@@ -6,3 +6,8 @@
 
 [package-image]: https://badge.fury.io/js/typescript-template.svg
 [package-url]: https://badge.fury.io/js/typescript-template
+
+## Install
+```bash
+npm install @tejks/logger
+```
