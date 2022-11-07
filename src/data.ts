@@ -1,27 +1,26 @@
 export const MONTHS = [
-  'Jan',
-  'Feb',
-  'Mar',
-  'Apr',
-  'May',
-  'Jun',
-  'Jul',
-  'Aug',
-  'Sep',
-  'Oct',
-  'Nov',
-  'Dec',
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
 ];
 
 export const DEFAULT = {
-  path: './logs',
+  path: "./logs",
 };
 
-export enum ErrorType {
-  ALERT = 'ALERT',
-  CRIT = 'CRIT',
-  ERROR = 'ERROR',
-  WARNING = 'WARNING',
-  NOTICE = 'NOTICE',
-  INFO = 'INFO',
-}
+export type LogType =
+  | "CRIT"
+  | "ERROR"
+  | "WARNING"
+  | "NOTICE"
+  | "INFO"
+  | "OK"
