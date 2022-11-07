@@ -1,7 +1,7 @@
 {
   "name": "ts-dev-logger",
   "version": "0.1.0",
-  "description": "",
+  "description": "A development tool that allows you to log data to the console and to a file.",
   "main": "./lib/index.js",
   "types": "./lib/index.js",
   "files": [
@@ -17,7 +17,7 @@
   "scripts": {
     "dev": "ts-node ./src/index.ts",
     "build": "tsc",
-    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish --access public",
+    "pub": "npm version patch && npm run build && npm publish --access public",
     "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'"
   },
   "repository": {
