@@ -16,7 +16,6 @@
     "console"
   ],
   "scripts": {
-    "dev": "ts-node ./src/index.ts",
     "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
@@ -25,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tejks/logger.git"
+    "url": "git+https://github.com/tejks/ts-dev-logger.git"
   },
   "author": "tejks",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/tejks/logger/issues"
+    "url": "https://github.com/tejks/ts-dev-logger/issues"
   },
-  "homepage": "https://github.com/tejks/logger#readme",
+  "homepage": "https://github.com/tejks/ts-dev-logger#readme",
   "devDependencies": {
     "@types/chai": "^4.3.3",
     "@types/mocha": "^10.0.0",
