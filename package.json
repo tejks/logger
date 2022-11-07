@@ -1,11 +1,18 @@
 {
-  "name": "@tejks/logger",
-  "version": "0.2.0",
+  "name": "ts-dev-logger",
+  "version": "0.1.0",
   "description": "",
   "main": "./lib/index.js",
   "types": "./lib/index.js",
   "files": [
     "lib/**/*"
+  ],
+  "keywords": [
+    "typescript",
+    "log",
+    "logger",
+    "file",
+    "console"
   ],
   "scripts": {
     "dev": "ts-node ./src/index.ts",
