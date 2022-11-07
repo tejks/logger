@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/license-Apache2-blue.svg?style=flat" alt="Apache 2">
 
 [package-image]: https://badge.fury.io/js/typescript-template.svg
-[package-url]: https://badge.fury.io/js/typescript-template
+[package-url]: https://www.npmjs.com/package/ts-dev-logger
 
 ## Install
 ```bash
