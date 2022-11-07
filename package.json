@@ -1,6 +1,6 @@
 {
   "name": "ts-dev-logger",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A development tool that allows you to log data to the console and to the file.",
   "main": "./lib/index.js",
   "types": "./lib/index.js",
