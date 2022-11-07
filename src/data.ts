@@ -17,10 +17,4 @@ export const DEFAULT = {
   path: "./logs",
 };
 
-export type LogType =
-  | "CRIT"
-  | "ERROR"
-  | "WARNING"
-  | "NOTICE"
-  | "INFO"
-  | "OK"
+export type LogType = "CRIT" | "ERROR" | "WARNING" | "NOTICE" | "INFO" | "OK";

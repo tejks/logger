@@ -25,9 +25,7 @@ export class FileLogger implements LoggerBuilder {
   private getFullPath() {
     const date = new Date();
 
-    return `${this.path}/${date.getFullYear()}/${
-      MONTHS[date.getMonth()]
-    }/`;
+    return `${this.path}/${date.getFullYear()}/${MONTHS[date.getMonth()]}/`;
   }
 
   private getFileName() {
@@ -39,17 +37,25 @@ export class FileLogger implements LoggerBuilder {
   }
 
   private getStyledMessage(message: string, type: LogType) {
-    return `\n${this.getFormedType(type)} -- ${this.params.getDate()} -- ${message}`;
+    return `\n${this.getFormedType(
+      type
+    )} -- ${this.params.getDate()} -- ${message}`;
   }
 
   private getFormedType(type: LogType) {
     switch (type) {
-      case "WARNING": return "WARNING"
-      case "ERROR": return "ERROR  "
-      case "INFO": return "INFO   "
-      case "NOTICE": return "NOTICE "
-      case "OK": return "OK     "
-      case "CRIT": return "CRIT   "
+      case "WARNING":
+        return "WARNING";
+      case "ERROR":
+        return "ERROR  ";
+      case "INFO":
+        return "INFO   ";
+      case "NOTICE":
+        return "NOTICE ";
+      case "OK":
+        return "OK     ";
+      case "CRIT":
+        return "CRIT   ";
     }
   }
 }
