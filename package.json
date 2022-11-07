@@ -2,10 +2,11 @@
   "name": "ts-dev-logger",
   "version": "0.1.2",
   "description": "A development tool that allows you to log data to the console and to the file.",
-  "main": "./lib/index.js",
-  "types": "./lib/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
   "files": [
-    "lib/**/*"
+      "dist"
   ],
   "keywords": [
     "typescript",
@@ -16,7 +17,9 @@
   ],
   "scripts": {
     "dev": "ts-node ./src/index.ts",
-    "build": "tsc",
+    "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
     "pub": "npm version patch && npm run build && npm publish --access public",
     "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'"
   },
@@ -47,7 +50,6 @@
   },
   "exclude": [
     "./tests/",
-    "./node_modules/",
-    "./dist/"
+    "./node_modules/"
   ]
 }
