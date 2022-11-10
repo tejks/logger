@@ -60,3 +60,7 @@ logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'CRIT'})
 ![Alt text](./images/log_file.png)
 
 ---
+
+## License
+
+ts-dev-logger is licensed under the Apache License, Version 2.0.
