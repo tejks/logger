@@ -19,15 +19,13 @@ yarn add ts-dev-logger
 
 ---
 
-### Quick Guide
+## Quick Guide - console
 
-#### Basic Usage
+#### -- Basic Usage --
 ```js
-export const logger = new Logger({dateType: 'UTCDate'})
-const fileLogger = new FileLogger()
+export const logger = new Logger({dateType: 'Time'})
 const consoleLogger = new ConsoleLogger()
 
-logger.constructLogger(fileLogger)
 logger.constructLogger(consoleLogger)
 
 logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'ERROR'})
@@ -37,3 +35,28 @@ logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'NOTICE'})
 logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'OK'})
 logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'CRIT'})
 ```
+#### -- Result --
+![Alt text](./images/log_console.png)
+
+---
+
+## Quick Guide - file
+
+#### -- Basic Usage --
+```js
+export const logger = new Logger({dateType: 'Time'})
+const fileLogger = new FileLogger()
+
+logger.constructLogger(fileLogger)
+
+logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'ERROR'})
+logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'WARNING'})
+logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'INFO'})
+logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'NOTICE'})
+logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'OK'})
+logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'CRIT'})
+```
+#### -- Result --
+![Alt text](./images/log_file.png)
+
+---
