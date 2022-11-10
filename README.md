@@ -75,6 +75,15 @@ logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'CRIT'})
 
 ---
 
+## Contributing
+
+We welcome all types of contributions, either code fixes, new features or doc improvements.
+Code formatting is enforced by [prettier](https://prettier.io/).
+For commits please follow conventional [commits convention](https://www.conventionalcommits.org/en/v1.0.0-beta.2/).
+All code must pass lint rules and test suites before it can be merged into develop.
+
+---
+
 ## License
 
 ts-dev-logger is licensed under the Apache License, Version 2.0.
