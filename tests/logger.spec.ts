@@ -1,28 +1,20 @@
-import { Logger, LogType } from "../src";
+import { Logger } from "../src";
 import { ConsoleLogger } from "../src/builders/console-logger";
 import { FileLogger } from "../src/builders/file-logger";
 
-function delay(ms: number) {
-    return new Promise( resolve => setTimeout(resolve, ms) );
-}
-
 describe('logger tests', async () => {
     it('checking default options', async () => {
-        const logger = new Logger({dateType: 'UTCDate'})
+        const logger = new Logger({dateType: 'Time'})
         const fileLogger = new FileLogger()
         const consoleLogger = new ConsoleLogger()
         logger.constructLogger(fileLogger)
         logger.constructLogger(consoleLogger)
 
-        while(true){
-            logger.log({message: 'Hello', type: 'ERROR'})
-            logger.log({message: 'Hello', type: 'WARNING'})
-            logger.log({message: 'Hello', type: 'INFO'})
-            logger.log({message: 'Hello', type: 'NOTICE'})
-            logger.log({message: 'Hello', type: 'OK'})
-            logger.log({message: 'Hello', type: 'CRIT'})
-
-            await delay(1000)
-        }
+        logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'ERROR'})
+        logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'WARNING'})
+        logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'INFO'})
+        logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'NOTICE'})
+        logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'OK'})
+        logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'CRIT'})
     });
 });
