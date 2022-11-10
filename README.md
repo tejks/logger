@@ -1,4 +1,5 @@
-# ts-dev-logger
+<div align="center">
+<h1>ts-dev-logger</h1>
 
 [![Package Version][package-image]][package-url]
 <img src="https://img.shields.io/badge/platform-node-lightgrey.svg?style=flat" alt="platform">
@@ -6,6 +7,16 @@
 
 [package-image]: https://badge.fury.io/js/typescript-template.svg
 [package-url]: https://www.npmjs.com/package/ts-dev-logger
+
+<p>A development tool that allows you to log data to the console and to the file.</p>
+</br>
+<p>
+    <a href="#installation"><strong>Installation</strong></a> ·
+    <a href="#logger---params"><strong>Params</strong></a> ·
+    <a href="#quick-guide---console"><strong>Quick Guide</strong></a> ·
+    <a href="#license"><strong>License</strong></a>
+ </p>
+</div>
 
 ## Installation
 ```bash
@@ -16,6 +27,9 @@ or
 ```bash
 yarn add ts-dev-logger
 ```
+---
+
+## Logger - params
 
 ---
 
