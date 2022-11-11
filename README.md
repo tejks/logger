@@ -73,7 +73,7 @@ logger.log({message: 'Lorem Ipsum is simply dummy text', type: 'CRIT'})
 #### -- Basic Usage --
 ```js
 export const logger = new Logger({dateType: 'Time'})
-const fileLogger = new FileLogger()
+const fileLogger = new FileLogger({})
 
 logger.constructLogger(fileLogger)
 

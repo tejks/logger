@@ -5,7 +5,7 @@ import { FileLogger } from "../src/builders/file-logger";
 describe('logger tests', async () => {
     it('checking default options', async () => {
         const logger = new Logger({dateType: 'Time'})
-        const fileLogger = new FileLogger()
+        const fileLogger = new FileLogger({})
         const consoleLogger = new ConsoleLogger()
         logger.constructLogger(fileLogger)
         logger.constructLogger(consoleLogger)
