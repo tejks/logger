@@ -3,14 +3,14 @@ import fs from "fs";
 import { DEFAULT, LogType, MONTHS } from "../data";
 
 export interface FileParams {
-  path?: string
+  path?: string;
 }
 
 export class FileLogger implements LoggerBuilder {
   params!: LoggerParams;
-  private readonly path: string
-  constructor({path = DEFAULT.path}: FileParams) {
-    this.path = path
+  private readonly path: string;
+  constructor({ path = DEFAULT.path }: FileParams) {
+    this.path = path;
   }
 
   public log({ type, message }: Log) {
