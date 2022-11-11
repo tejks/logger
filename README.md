@@ -33,7 +33,13 @@ yarn add ts-dev-logger
 
 ## Logger - params
 
-![Alt text](./images/data_type.png) 
+- dateType:
+    - UTCDate
+    - FullDate (default)
+    - ShortTime
+    - Time
+
+<img src="./images/data_type.png" alt="data_type" width="500"/>
 
 ---
 
