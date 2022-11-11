@@ -2,9 +2,16 @@ import { Log, LoggerBuilder, LoggerParams } from "../logger";
 import fs from "fs";
 import { DEFAULT, LogType, MONTHS } from "../data";
 
+export interface FileParams {
+  path: string
+}
+
 export class FileLogger implements LoggerBuilder {
   params!: LoggerParams;
-  constructor(private path: string = DEFAULT.path) {}
+  private readonly path: string
+  constructor({path = DEFAULT.path}) {
+    this.path = path
+  }
 
   public log({ type, message }: Log) {
     const path = this.getFullPath();
