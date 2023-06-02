@@ -23,6 +23,8 @@
 [package-url]: https://www.npmjs.com/package/ts-dev-logger
 </div>
 
+</br>
+
 ## Installation
 ```bash
 npm i ts-dev-logger
