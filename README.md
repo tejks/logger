@@ -1,4 +1,7 @@
+</br>
 <div align="center">
+    <img src="https://github.com/tejks/ts-dev-logger/assets/50965095/14b3eba7-8110-41bd-a594-83458b21c0ad" alt="icon"/>
+
 <h1>ts-dev-logger</h1>
 
 <p>A development tool that allows you to log data to the console and to the file.</p>
